@@ -1,0 +1,390 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+/* Reset */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.first-section {
+  background-image: url("../img/background-section-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 160px 0;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.nav-list .nav-list-item a {
+  font-family: "Inter";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #575c60;
+}
+.cta-header-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.cta-btn-header {
+  width: 188px;
+  height: 40px;
+  border-radius: 1000px;
+  background-color: #005ebd;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 32px 0;
+}
+.main-section-text-wrapper h1 {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: #14181b;
+  width: 700px;
+}
+.main-section-text-wrapper p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #575c60;
+  width: 488px;
+  margin-top: 8px;
+}
+.main-section-cta-wrapper p {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #14181b;
+  margin-bottom: 10px;
+}
+.main-section-cta-wrapper span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  max-width: 425px;
+  color: #575c60;
+  display: block;
+}
+.main-section-cta-wrapper {
+  background-color: #fff;
+  padding: 44px 24px;
+  border-radius: 4px;
+}
+.main-section-cta-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 10px;
+}
+.main-section-cta-wrapper form input {
+  height: 48px;
+  padding: 16px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+}
+.main-section-cta-wrapper form input::placeholder {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #a4a4a4;
+}
+.main-section-cta-wrapper form button {
+  width: 100%;
+  max-width: 440px;
+  height: 48px;
+  background-color: #005ebd;
+  border: 0;
+  border-radius: 1000px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.tags-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  left: 80px;
+  z-index: 10;
+}
+.tag-blue {
+  width: 100%;
+  max-width: 336px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  padding: 0 24px 0 8px;
+}
+.icon-and-desc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon-tag {
+  padding: 20px;
+  border-radius: 1000px;
+  background-color: #bfe5ff;
+}
+.desc1 {
+  width: 120px;
+  height: 16px;
+  background: #bfe5ff;
+  border-radius: 100px;
+  margin-bottom: 8px;
+}
+.desc2 {
+  width: 91px;
+  height: 16px;
+  background: #e4f4ff;
+  border-radius: 100px;
+}
+.tag-number {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4b5053;
+}
+
+.tag-green {
+  width: 100%;
+  max-width: 336px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px 0 8px;
+  margin-left: 50px;
+}
+.icon-and-desc.green {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon-tag.green {
+  padding: 20px;
+  border-radius: 1000px;
+  background: rgba(154, 255, 110, 0.32);
+}
+.desc1.green {
+  width: 120px;
+  height: 16px;
+  background: #9aff6e;
+  border-radius: 100px;
+  margin-bottom: 8px;
+}
+.desc2.green {
+  width: 91px;
+  height: 16px;
+  background: #d8ffc8;
+  border-radius: 100px;
+}
+.tag-number.green {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4b5053;
+}
+
+.tag-grey {
+  width: 100%;
+  max-width: 336px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px 0 8px;
+}
+.icon-and-desc.grey {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon-tag.grey {
+  padding: 20px;
+  border-radius: 1000px;
+  background: #ebf1f6;
+}
+.desc1.grey {
+  width: 120px;
+  height: 16px;
+  background: #ebf1f6;
+  border-radius: 100px;
+  margin-bottom: 8px;
+}
+.desc2.grey {
+  width: 91px;
+  height: 16px;
+  background: #f2f9ff;
+  border-radius: 100px;
+}
+.tag-number.grey {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4b5053;
+}
+.main-section-second-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.central-image img {
+}
+.rating-text p {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+
+  /* Escala Cinza/900 */
+
+  color: #14181b;
+
+  max-width: 312px;
+}
+.rating-pics {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.rating-pics > div {
+  width: 56px;
+  height: 56px;
+  border-radius: 1000px;
+  position: relative;
+}
+.rating-pics > div > img {
+  position: absolute;
+  width: 100%;
+}
+.rating-pic-item-2 {
+  position: relative;
+  right: 20px;
+}
+.rating-pic-item-3 {
+  position: relative;
+  right: 40px;
+}
+.rating-pic-item-4 {
+  position: relative;
+  right: 60px;
+}
+.rating-pic-item-5 {
+  position: relative;
+  right: 80px;
+}
+.rating-pic-item-6 {
+  position: relative;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a3c8f7;
+}
+.rating-pic-item-6 span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8.76923px;
+  line-height: 12px;
+  color: #426b94;
+}
+.rating-text-2 p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Escala Cinza/700 */
+
+  color: #282d30;
+}
+.rating-text-2 {
+  margin-bottom: 10px;
+}
+.stars {
+  display: flex;
+  gap: 10px;
+}
+.rate-note {
+  margin-top: 10px;
+}
+.actual-note {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #33383c;
+}
+.value-note {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 40px;
+  color: #33383c;
+  margin-left: 4px;
+}
