@@ -1,0 +1,14 @@
+.nav-mobile-wrapper{
+    display: none;
+}
+@media screen and (max-width:1025px){
+   .nav-wrapper{
+    display: none;
+   }
+   .nav-mobile-wrapper{
+    display: block;
+    padding: 20px;
+    width: 300px;
+    background-color: red;
+   }
+}
