@@ -1,14 +1,216 @@
-.nav-mobile-wrapper{
-    display: none;
+.nav-wrapper-mobile {
+  display: none;
 }
-@media screen and (max-width:1025px){
-   .nav-wrapper{
+@media screen and (max-width: 1025px) {
+  .container {
+    padding: 0 2%;
+  }
+  .nav-wrapper {
     display: none;
-   }
-   .nav-mobile-wrapper{
+  }
+
+  .nav-wrapper-mobile {
     display: block;
     padding: 20px;
-    width: 300px;
-    background-color: red;
-   }
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .nav-wrapper-mobile img {
+    width: 26px;
+  }
+  .nav-list-mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    background-color: #fff;
+    height: 0px;
+    pointer-events: none;
+    transition: all 1s ease;
+  }
+  .nav-list-mobile.active {
+    height: fit-content;
+    pointer-events: all;
+    padding: 70px;
+    box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.3);
+  }
+  .close-menu-icon {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .close-menu-icon.active {
+    opacity: 1;
+    left: 100%;
+    transform: translateX(0);
+    pointer-events: all;
+  }
+  .hamb-menu {
+    transition: all 1s ease;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .hamb-icon,
+  .close-menu-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 2s;
+  }
+  .hamb-icon.active {
+    left: -30px;
+    transform: translateX(0);
+  }
+  .left-right-section-wrapper {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .img-arrows img {
+    display: none;
+  }
+}
+@media screen and (max-width: 896px) {
+  .main-section-wrapper {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .main-section-text-wrapper h1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main-section-text-wrapper p {
+    margin: 8px auto 0 auto;
+    text-align: center;
+  }
+  .main-section-second-part {
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+  .rating-text p {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .rating-pics {
+    position: relative;
+    left: 15%;
+  }
+  .rating-text-2 {
+    text-align: center;
+  }
+  .stars {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .rate-note {
+    text-align: center;
+  }
+
+  .text-second-section {
+    text-align: center;
+  }
+  .title-second-section {
+    margin: 8px auto 0 auto;
+    text-align: center;
+  }
+  .fourth-section .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fourth-section > img {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .fourth-section-text {
+    text-align: center;
+  }
+  .fourth-section .playstore-rate {
+    text-align: center;
+  }
+  .cta-app-wrapper p {
+    text-align: center;
+  }
+  .cta-app-wrapper span {
+    display: block;
+    text-align: center;
+  }
+  .cta-app {
+    margin: 24px auto 0 auto;
+  }
+  .fiveth-section > .container {
+    flex-direction: column-reverse;
+    gap: 36px;
+  }
+  .drop-down-section .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-wrapper-mobile {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    max-width: 110px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .talk-img {
+    top: -100px;
+  }
+  .tg-icon-4 {
+    position: absolute;
+    top: -90px;
+    right: 120px;
+    display: block;
+  }
+  .tg-icon-2 {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+  }
+  .tg-icon-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 100%;
+    max-width: 150px;
+  }
+  .footer-2 .container {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 22px;
+  }
+  .footer-2 .container ul {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-2 .container ul li a {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 816px) {
+  .logo-and-app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 22px;
+  }
 }
