@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/steps.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,194 +17,407 @@
   <body>
     <section class="first-section">
       <div class="container">
-        <header class="first-section-header">
-          <div class="logo-wrapper">
-            <img src="./img/logo.svg" alt="" />
-          </div>
-          <div class="nav-wrapper">
-            <ul class="nav-list">
-              <li class="nav-list-item">
-                <a href="/" class="nav-list-item-link">Blog</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="/" class="nav-list-item-link">Aulas ao vivo</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="/" class="nav-list-item-link">Conta Digital</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="/" class="nav-list-item-link">Parcelamento</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="/" class="nav-list-item-link">Aplicativo para MEIs</a>
-              </li>
-            </ul>
-          </div>
+        <div id="inside-steps" class="steps-wrapper">
 
-          <div class="nav-wrapper-mobile">
-            <div class="hamb-menu">
-              <img src="./img/hamb-icon.png" alt="" class="hamb-icon" />
-              <img src="./img/close-menu.png" alt="" class="close-menu-icon" />
+          <section  class="inside-steps">
+            <div class="container">
+              <header class="inside-steps-header">
+                <img src="./img/logo.svg" alt="" />
+              </header>
+              <div class="steps-area">
+                <div class="progress-bar-steps">
+                  <div class="progress-bar"></div>
+                </div>
+                  <div class="step-area step-area-1-5">
+                      <div class="step-area-text">
+                        <p class="steps-number">Passo 1 de 5</p>
+                        <p class="steps-title">Selecione o ano que deseja declarar</p>
+                        <p class="steps-desciption">
+                          O ano que estiver aparecendo em VERMELHA é o que pode ser
+                          declarado nesse momento. Os próximo anos só serão liberados
+                          após a transmissão dos anteriores.
+                        </p>
+                      </div>
+                      <div class="step-area-data">
+                        <div class="social-name">
+                          <span>Razão social: </span>
+                          <p class="social-name-text" id="razao-social">
+                            DAYVID JANHSEN PINTO DE MEDEIROS 05321281335
+                          </p>
+                        </div>
+                        <div class="cnpj">
+                          <span>CNPJ: </span>
+                          <p class="cnpj-text" id="cnpj-info"></p>
+                        </div>
+                    </div>
+
+                    <div class="steps-chooses">
+                      <div class="steps-choose">
+                        <div class="choose-icon-year">
+                          <img src="./img/choose-icon-1.svg" alt="" class="choose-icon">
+                          <p class="choose-year">2022</p>
+                        </div>
+
+                        <div class="choose-situation">
+                          <p class="choose-situation-text">Boleto Gerado</p>
+                        </div>
+                      </div>  
+
+                      <div class="steps-choose steps-choose-2">
+                        <div class="choose-icon-year">
+                          <img src="./img/choose-icon-2.svg" alt="" class="choose-icon">
+                          <p class="choose-year">2022</p>
+                        </div>
+
+                        <div class="choose-situation">
+                          <p class="choose-situation-text">Aguardando pagamento</p>
+                        </div>
+                      </div>  
+
+                      <div class="steps-choose steps-choose-3">
+                        <div class="choose-icon-year">
+                          <img src="./img/choose-icon-3.svg" alt="" class="choose-icon">
+                          <p class="choose-year">2022</p>
+                        </div>
+
+                        <div class="choose-situation">
+                          <p class="choose-situation-text">Entregue</p>
+                        </div>
+                      </div>  
+                    </div>
+
+                    <p class="obs-text">
+                      Caso você tenha qualquer dúvida poderá entrar em contato com nosso suporte, clicando no ícone de WhatsApp no canto inferior direito da página. Teremos a maior alegria em te atender.
+                    </p>
+
+                    <div class="button-1-to-2">
+                      Próximo
+                    </div>
+                </div>
+
+                <div class="step-area step-area-2-5 aguardando-pagamento">
+                  <div class="step-area-text">
+                    <p class="steps-number">Passo 2 de 5</p>
+                    <p class="steps-title">Preencha os dados para realizar a declaração anual</p>
+                    <p class="steps-desciption">
+                      Fique atento aos campos obrigatórios(*)
+                    </p>
+                  </div>
+
+                  <div class="step-area-data">
+                    <div class="social-name">
+                      <span>Razão social: </span>
+                      <p class="social-name-text" id="razao-social">
+                        DAYVID JANHSEN PINTO DE MEDEIROS 05321281335
+                      </p>
+                    </div>
+                    <div class="cnpj">
+                      <span>CNPJ: </span>
+                      <p class="cnpj-text" id="cnpj-info-2"></p>
+                    </div>
+                </div>
+
+                  <form action="" class="aguardando-pagamento-form">
+
+                    <div class="mei-comercio-wrapper"> 
+                      <img src="" alt="" class="what-is-icon">
+                      <label class="label-mei-form" for="comercio">Seu MEI é comércio?</label>
+                      <input placeholder="Insira o valor recebido durante 2022 sem desconto" required  type="text" name="mei-comercio" id="mei-comercio">
+                    </div>
+
+                    <div class="mei-prestacao-wrapper">
+                      <label class="label-mei-form" for="mei-prestacao">Seu MEI é prestação de serviço?</label>
+                      <input placeholder="Insira o valor recebido durante 2022 sem desconto"  type="text" name="prestecao" id="mei-prestacao">
+                    </div>
+                    
+                    <span class="obs-form-inputs">Caso o seu MEI tenha os dois tipos de atividades preencha os dois campos.</span>
+                  
+                    <div class="mei-funcionarios-wrapper">
+                      <p class="funcionarios-text">Você teve funcionários durante o ano declarado?</p>
+                      <div class="funcionarios-check-wrapper">
+                        <div class="funcionarios-check">
+                          <input  type="radio" name="funcionarios" id="yes" value="yes">
+                          <label for="yes">Sim, tive</label>
+                        </div>
+
+                        <div class="funcionarios-check">
+                          <input  type="radio" name="funcionarios" id="no" value="no">
+                          <label for="no">Não tive</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="terms-wrapper">
+                      <p class="terms-text">Termo de responsabilidade</p>
+                      <div class="terms-check">
+                        <input  type="radio" name="terms" id="terms" value="terms">
+                        <label  for="terms">Li e concordo com os <a href="/">termos de uso</a></label>
+                      </div>
+                    </div>
+                  
+                    <div class="total-value">
+                      <span class="total-value-span">Valor total:</span><span class="total-value-number">R$11.000,00</span>
+                    </div>
+
+                   <div class="button-2-to-3">Próximo</div>
+                  </form>
+                </div>
+
+                <div class="step-area step-area-3-5">
+                  <div class="step-area-text">
+                    <p class="steps-number">Passo 3 de 5</p>
+                    <p class="steps-title">Selecione uma forma de pagamento</p>
+                    <p class="steps-desciption">
+                      Após realizar o pagamento, em até 2 dias úteis você receberá seu comprovante da declaração no e-mail que foi cadastrrado em nossa plataforma.
+                    </p>
+                  </div>
+                  <div class="total-value-second-page">
+                    <span class="total-value-span-second-page">Valor somente até 09 de abril, após R$ 124,90</span><span class="total-value-number-second-page">Total: R$ 74,90</span>
+                  </div>
+
+                  <p class="obs-text-payment">
+                    Forma de pagamento
+                  </p>
+                  <form action="" class="method-payments">
+                    <div class="method-payments-wrapper">
+                      <inpu type="radio" name="payment-method" id="credit-card" value="credit">
+                    <label class="credit-card" for="credit-card">
+                      <img src="./img/credit-card.svg" alt="">
+                      <span>Cartão de Crédito</span>
+                    </label>
+                    <input type="radio" name="payment-method" id="pix" value="pix">
+                    <label class="pix" for="pix">
+                      <img src="./img/pix-item.svg" alt="">
+                      <span>Pix</span>
+                    </label>
+                    </div>
+                   <button type="submit" class="button-3-to-4">Próximo</button>
+                  </form>
+                </div>
+
+                <div class="method-credit-card-payment-selected">
+                  <div class="step-area-text">
+                    <p class="steps-number">Passo 4 de 5</p>
+                    <p class="steps-title">Cartão de crédito</p>
+                    <p class="steps-desciption">
+                      Após realizar o pagamento, em até 2 dias úteis você receberá seu comprovante da declaração no e-mail que foi cadastrrado em nossa plataforma.
+                    </p>
+                  </div>
+
+                  <form action="" class="credit-card-form">
+                    <label class="name-credit-card" for="name-credit-c  ard">Nome do titular</label>
+                    <input placeholder="Digite o nome do titular" required type="text" name="name-credit-card" id="name-credit-card-input">
+
+                    <label class="number-credit-card" for="name-credit-card">Nome do titular</label>
+                    <input placeholder="Número do cartão" required type="text" name="number-credit-card" id="number-credit-card-input">
+
+                    <div class="validate-and-code">
+                      <div class="validate-wrapper">
+                        <label for="validade-card-input">Validade</label>
+                        <input placeholder="07/27" required type="text" name="validate-card" id="validade-card-input">
+                      </div>
+
+                      <div class="cvv-code">
+                        <label for="cvv-code-input">CVV</label>
+                        <input placeholder="000" required type="text" name="cvv" id="cvv-code-input">
+                      </div>
+                    </div>
+
+                    <button type="submit" class="button-4-to-5">Próximo</button>
+                    <div class="back-to-3-to-4">Alterar forma de pagamento</div>
+                  </form>
+                </div>
+
+                <div class="success-payment-wrapper">
+                  <img src="./img/check-img.svg" alt="" class="success-payment-img">
+                  <p class="success-payment-text">Declaração anual enviada com sucesso</p>
+                  <p class="success-payment-text-2">Após realizar o pagamento, em até 2 dias úteis você receberá seu comprovante da declaração no e-mail que foi cadastrrado em nossa plataforma.</p>
+                  <div class="button-back-to-page">Sair</div>
+                </div>
+
+                <div class="method-pix-payment-selected">
+                  <div class="step-area-text">
+                    <p class="steps-number">Passo 4 de 5</p>
+                    <p class="steps-title">Pagamento em PIX</p>
+                    <p class="steps-desciption">
+                      Ao realizar o pagamento por PIX, em até x minutos você irá receber um comprovante da declaração no e-mail que foi cadastrado em nossa plataforma.
+                    </p>
+                  </div>
+
+                  <div class="pix-payment-wrapper">
+                    <img src="./img/qr-code-img.svg" alt="" class="qrcode">
+                  </div>
+
+                  <p class="qrcode-payment-code">
+                    200202020202022104br.gov.bcbpix2542pix.asaas.com/qr/cob/pay_250502505 MEI EM FOCO SOLUCOES EMP R6015FAZENDA RIO GRAO
+                  </p>
+                  <div class="copy-pix-code">Copiar código PIX</div>
+                  <div class="other-declaration">Fazer outra declaração</div>
+                </div>
+
+               
             </div>
-            <ul class="nav-list-mobile">
-              <li class="nav-list-item">
-                <a href="/" class="nav-list-item-link">Blog</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="/" class="nav-list-item-link">Aulas ao vivo</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="/" class="nav-list-item-link">Conta Digital</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="/" class="nav-list-item-link">Parcelamento</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="/" class="nav-list-item-link">Aplicativo para MEIs</a>
-              </li>
-            </ul>
-          </div>
+          </section>
+        </div>
 
-          <div class="cta-header-wrapper">
-            <img src="./img/user.svg" alt="" />
-            <div class="cta-btn-header">Faça a sua declaração</div>
-          </div>
-        </header>
+        
+        <div class="section-home">
+            
+          <header class="first-section-header">
+            <div class="logo-wrapper">
+              <img src="./img/logo.svg" alt="" />
+            </div>
+            <div class="nav-wrapper">
+              <ul class="nav-list">
+                <li class="nav-list-item">
+                  <a href="/" class="nav-list-item-link">Blog</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="/" class="nav-list-item-link">Aulas ao vivo</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="/" class="nav-list-item-link">Conta Digital</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="/" class="nav-list-item-link">Parcelamento</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="/" class="nav-list-item-link">Aplicativo para MEIs</a>
+                </li>
+              </ul>
+            </div>
 
-        <section class="main-section-wrapper">
-          <div class="main-section-text-wrapper">
-            <h1>
-              Faça sua declaração anual do MEI com uma empresa de confiança
-            </h1>
-            <p>
-              A Declaração Anual do MEI (DASN-SIMEI) deve ser entregue por todos
-              que tem um CNPJ MEI e que abriram ele até o dia 31 de
-              Dezembro de 2022.
-            </p>
-          </div>
-          <div class="main-section-cta-wrapper">
-            <p>
-              Não perca tempo!<br />
-              Faça aqui sua declaração
-            </p>
-            <span
-              >Não perca tempo! Faça aqui sua declaração Insira abaixo seu CNPJ,
-              em seguida encaminharemos você para o preenchimento de sua
-              declaração anual Insira seu CNPJ Sufix Helptext Começar
-              declaração</span
-            >
-            <form action="">
-              <input
-                placeholder="Insira o seu CNPJ"
-                type="text"
-                name=""
-                id=""
-              />
-              <button type="submit">Começar declaração</button>
-            </form>
-          </div>
-        </section>
+            <div class="nav-wrapper-mobile">
+              <div class="hamb-menu">
+                <img src="./img/hamb-icon.png" alt="" class="hamb-icon" />
+                <img src="./img/close-menu.png" alt="" class="close-menu-icon" />
+              </div>
+              <ul class="nav-list-mobile">
+                <li class="nav-list-item">
+                  <a href="/" class="nav-list-item-link">Blog</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="/" class="nav-list-item-link">Aulas ao vivo</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="/" class="nav-list-item-link">Conta Digital</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="/" class="nav-list-item-link">Parcelamento</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="/" class="nav-list-item-link">Aplicativo para MEIs</a>
+                </li>
+              </ul>
+            </div>
 
-        <section class="main-section-second-part">
-          <!-- <div class="tags-wrapper">
-            <div class="tag-blue">
-              <div class="icon-and-desc">
-                <img src="./img/tag-icon-1.svg" alt="" class="icon-tag" />
-                <div class="desc">
-                  <div class="desc1"></div>
-                  <div class="desc2"></div>
+            <div class="cta-header-wrapper">
+              <img src="./img/user.svg" alt="" />
+              <div class="cta-btn-header">Faça a sua declaração</div>
+            </div>
+          </header>
+
+          <section class="main-section-wrapper">
+            <div class="main-section-text-wrapper">
+              <h1>
+                Faça sua declaração anual do MEI com uma empresa de confiança
+              </h1>
+              <p>
+                A Declaração Anual do MEI (DASN-SIMEI) deve ser entregue por todos
+                que tem um CNPJ MEI e que abriram ele até o dia 31 de
+                Dezembro de 2022.
+              </p>
+            </div>
+            <div class="main-section-cta-wrapper">
+              <p>
+                Não perca tempo!<br />
+                Faça aqui sua declaração
+              </p>
+              <span
+                >Não perca tempo! Faça aqui sua declaração Insira abaixo seu CNPJ,
+                em seguida encaminharemos você para o preenchimento de sua
+                declaração anual Insira seu CNPJ Sufix Helptext Começar
+                declaração</span
+              >
+              <form action="" id="form-cnpj">
+                <input
+                  required
+                  placeholder="Insira o seu CNPJ"
+                  type="text"
+                  name="cnpj"
+                  id="cnpj"
+                />
+                <button type="submit">Começar declaração</button>
+              </form>
+            </div>
+          </section>
+
+          <section class="main-section-second-part">
+            <div class="central-image">
+              <img src="./img/central-image.svg" alt="" />
+            </div>
+
+            <div class="rating-wrapper">
+              <div class="img-arrows">
+                <img src="./img/img-arrows.svg" alt="" />
+              </div>
+              <div class="rating-text">
+                <p>Mais de 355 mil empreendedores atendidos nos últimos 3 anos</p>
+              </div>
+              <div class="rating-pics">
+                <div class="rating-pic-item-1">
+                  <img src="./img/rating-pic-1.png" alt="" />
+                </div>
+                <div class="rating-pic-item-2">
+                  <img src="./img/rating-pic-1.png" alt="" />
+                </div>
+                <div class="rating-pic-item-3">
+                  <img src="./img/rating-pic-1.png" alt="" />
+                </div>
+                <div class="rating-pic-item-4">
+                  <img src="./img/rating-pic-1.png" alt="" />
+                </div>
+                <div class="rating-pic-item-5">
+                  <img src="./img/rating-pic-1.png" alt="" />
+                </div>
+                <div class="rating-pic-item-6">
+                  <span>+350mil</span>
                 </div>
               </div>
-              <div class="tag-number"><span>2022</span></div>
-            </div>
+              <div class="rating-text-2">
+                <p>Empresa aprovada nas pesquisas :</p>
+              </div>
+              <div class="rating-note">
+                <div class="stars">
+                  <div class="star">
+                    <img src="./img/star.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./img/star.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./img/star.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./img/star.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./img/star.svg" alt="" />
+                  </div>
+                </div>
+                <div class="rate-note">
+                  <span class="actual-note">4,7</span>/<span class="value-note"
+                    >5.0</span
+                  >
+                </div>
+              </div>
 
-            <div class="tag-green">
-              <div class="icon-and-desc green">
-                <img src="./img/tag-icon-2.svg" alt="" class="icon-tag green" />
-                <div class="desc green">
-                  <div class="desc1 green"></div>
-                  <div class="desc2 green"></div>
-                </div>
-              </div>
-              <div class="tag-number"><span>2021</span></div>
-            </div>
-
-            <div class="tag-grey">
-              <div class="icon-and-desc grey">
-                <img src="./img/tag-icon-3.svg" alt="" class="icon-tag grey" />
-                <div class="desc grey">
-                  <div class="desc1 grey"></div>
-                  <div class="desc2 grey"></div>
-                </div>
-              </div>
-              <div class="tag-number"><span>2020</span></div>
-            </div>
-          </div> -->
-
-          <div class="central-image">
-            <img src="./img/central-image.svg" alt="" />
-          </div>
-
-          <div class="rating-wrapper">
-            <div class="img-arrows">
-              <img src="./img/img-arrows.svg" alt="" />
-            </div>
-            <div class="rating-text">
-              <p>Mais de 355 mil empreendedores atendidos nos últimos 3 anos</p>
-            </div>
-            <div class="rating-pics">
-              <div class="rating-pic-item-1">
-                <img src="./img/rating-pic-1.png" alt="" />
-              </div>
-              <div class="rating-pic-item-2">
-                <img src="./img/rating-pic-1.png" alt="" />
-              </div>
-              <div class="rating-pic-item-3">
-                <img src="./img/rating-pic-1.png" alt="" />
-              </div>
-              <div class="rating-pic-item-4">
-                <img src="./img/rating-pic-1.png" alt="" />
-              </div>
-              <div class="rating-pic-item-5">
-                <img src="./img/rating-pic-1.png" alt="" />
-              </div>
-              <div class="rating-pic-item-6">
-                <span>+350mil</span>
+              <div class="rate-seal-img">
+                <img src="./img/seal-img.svg" alt="" />
               </div>
             </div>
-            <div class="rating-text-2">
-              <p>Empresa aprovada nas pesquisas :</p>
-            </div>
-            <div class="rating-note">
-              <div class="stars">
-                <div class="star">
-                  <img src="./img/star.svg" alt="" />
-                </div>
-                <div class="star">
-                  <img src="./img/star.svg" alt="" />
-                </div>
-                <div class="star">
-                  <img src="./img/star.svg" alt="" />
-                </div>
-                <div class="star">
-                  <img src="./img/star.svg" alt="" />
-                </div>
-                <div class="star">
-                  <img src="./img/star.svg" alt="" />
-                </div>
-              </div>
-              <div class="rate-note">
-                <span class="actual-note">4,7</span>/<span class="value-note"
-                  >5.0</span
-                >
-              </div>
-            </div>
-
-            <div class="rate-seal-img">
-              <img src="./img/seal-img.svg" alt="" />
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </section>
 
@@ -687,5 +901,6 @@
     <script src="./script/main.js"></script>
     <script src="./script/dropDown.js"></script>
     <script src="./script/menu.js"></script>
+    <script src="./script/steps.js"></script>
   </body>
 </html>
