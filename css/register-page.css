@@ -1,0 +1,111 @@
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cnpj-and-cpf,
+.date-whatsapp {
+  display: flex;
+  flex-direction: row;
+}
+.cnpj-wrapper,
+.cpf-wrapper,
+.date-wrapper,
+.whatsapp-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+  padding-bottom: 12px;
+}
+.cnpj-wrapper {
+  margin-right: 2%;
+}
+.name-register-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 12px;
+}
+.date-wrapper {
+  margin-right: 2%;
+}
+.date-whatsapp {
+  padding-bottom: 12px;
+}
+.doubt-text {
+  margin-bottom: 12px;
+}
+.register-form input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 48px;
+  padding: 0 16px;
+}
+.register-form label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  /* Neutral/Color/500 */
+
+  color: #1a191b;
+}
+.doubt-text {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  /* Escala Cinza/400 */
+  text-align: center !important;
+  color: #818181;
+}
+
+.name-register-wrapper span {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  /* Escala Cinza/400 */
+
+  color: #818181;
+}
+.register-form button {
+  border: 0;
+  background-color: #005ebd;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: 1s;
+  transition: width 0.5s ease-in-out, height 1s ease-in-out;
+  margin-top: 12px;
+}
+.register-form button:hover {
+  background-color: #2684e2;
+}
+@media screen and (max-width: 520px) {
+  .cnpj-and-cpf,
+  .date-whatsapp {
+    display: flex;
+    flex-direction: column;
+  }
+}

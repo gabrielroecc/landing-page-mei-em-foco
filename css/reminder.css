@@ -1,0 +1,41 @@
+.reminder-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.reminder-form input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 48px;
+  padding: 0 16px;
+}
+.reminder-form button {
+  border: 0;
+  background-color: #005ebd;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: 1s;
+  transition: width 0.5s ease-in-out, height 1s ease-in-out;
+  margin-top: 12px;
+}
+.reminder-form button:hover {
+  background-color: #2684e2;
+}
+@media screen and (max-width: 520px) {
+  .cnpj-and-cpf,
+  .date-whatsapp {
+    display: flex;
+    flex-direction: column;
+  }
+}

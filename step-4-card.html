@@ -1,0 +1,1067 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://meiemfoco.com.br/assets/mei-v4/css/main.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://meiemfoco.com.br/assets/mei-v4/css/responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://meiemfoco.com.br/assets/mei-v4/css/steps.css"
+    />
+    <link rel="stylesheet" href="./css/steps.css" />
+    <link
+      rel="stylesheet"
+      href="https://meiemfoco.com.br/assets/mei-v4/css/register-page.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://meiemfoco.com.br/assets/mei-v4/css/reminder.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+  </head>
+  <body cz-shortcut-listen="true">
+    <section class="first-section first-section-header-wrapper">
+      <div class="container">
+        <header class="first-section-header">
+          <div class="logo-wrapper">
+            <a href="https://meiemfoco.com.br/meiv4"
+              ><img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/logo.svg"
+                alt=""
+            /></a>
+          </div>
+          <div class="nav-wrapper">
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="/" class="nav-list-item-link">Blog</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="/" class="nav-list-item-link">Aulas ao vivo</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="/" class="nav-list-item-link">Conta Digital</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="/" class="nav-list-item-link">Parcelamento</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="/" class="nav-list-item-link">Aplicativo para MEIs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-wrapper-mobile">
+            <div class="hamb-menu">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/hamb-icon.webp"
+                alt=""
+                class="hamb-icon"
+              />
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/close-menu.webp"
+                alt=""
+                class="close-menu-icon"
+              />
+            </div>
+            <ul class="nav-list-mobile">
+              <li class="nav-list-item">
+                <a href="/" class="nav-list-item-link">Blog</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="/" class="nav-list-item-link">Aulas ao vivo</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="/" class="nav-list-item-link">Conta Digital</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="/" class="nav-list-item-link">Parcelamento</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="/" class="nav-list-item-link">Aplicativo para MEIs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cta-header-wrapper">
+            <img
+              src="https://meiemfoco.com.br/assets/mei-v4/img/user.webp"
+              alt=""
+            />
+            <div class="cta-btn-header">Faça a sua declaração</div>
+          </div>
+        </header>
+      </div>
+    </section>
+    <div
+      id="inside-steps"
+      class="steps-wrapper first-section first-section-home"
+    >
+      <section class="inside-steps">
+        <div class="steps-area">
+          <div class="progress-bar-steps">
+            <div class="progress-bar percentage-80"></div>
+          </div>
+
+          <div class="method-credit-card-payment-selected">
+            <div class="step-area-text">
+              <p class="steps-number">Passo 4 de 5</p>
+              <p class="steps-title">Cartão de crédito</p>
+
+              <div class="alert alert-danger">
+                <button class="close" data-dismiss="alert">×</button>
+                <div class="text-error">
+                  <img src="https://i.ibb.co/rwJpqvK/image-1.png" alt="" />
+                  <div class="text-wrapper">
+                    <h4 class="alert-heading">Erro!</h4>
+                    <p>
+                      Transação não autorizada. Verifique os dados do cartão de
+                      crédito e tente novamente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="steps-desciption">
+                Após realizar o pagamento, em até 2 dias úteis você receberá seu
+                comprovante da declaração no e-mail que foi cadastrrado em nossa
+                plataforma.
+              </p>
+            </div>
+
+            <form method="post" class="credit-card-form">
+              <label class="name-credit-card" for="name-credit-c  ard"
+                >Nome do titular</label
+              >
+              <input
+                type="text"
+                name="nome"
+                value=""
+                class="form form-control input-text-HOME"
+                placeholder="Nome impresso"
+                id="name-credit-card-input"
+              />
+
+              <label class="number-credit-card" for="name-credit-card"
+                >Número do cartão</label
+              >
+              <input
+                type="text"
+                name="numero"
+                value=""
+                class="form form-control input-text-HOME"
+                placeholder="Número do cartão"
+                data-inputmask='"mask": "9999 9999 9999 9999"'
+                data-mask=""
+                id="number-credit-card-input"
+              />
+
+              <div class="validate-and-code">
+                <div class="validate-wrapper">
+                  <label for="validade-card-input">Mês do Vencimento</label>
+                  <select
+                    name="mes"
+                    class="form form-control input-text-HOME sel"
+                    placeholder="Ano"
+                    id="validade-card-input"
+                  >
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+
+                <div class="validate-wrapper">
+                  <label for="validade-card-input">Ano do Vencimento</label>
+                  <select
+                    name="ano"
+                    class="form form-control input-text-HOME sel"
+                    placeholder="Ano"
+                    id="validade-card-input"
+                  >
+                    <option value="23">2023</option>
+                    <option value="24">2024</option>
+                    <option value="25">2025</option>
+                    <option value="26">2026</option>
+                    <option value="27">2027</option>
+                    <option value="28">2028</option>
+                    <option value="29">2029</option>
+                    <option value="30">2030</option>
+                    <option value="31">2031</option>
+                    <option value="32">2032</option>
+                    <option value="33">2033</option>
+                  </select>
+                </div>
+
+                <div class="cvv-code">
+                  <label for="cvv-code-input">CVV</label>
+                  <input
+                    type="text"
+                    name="cvv"
+                    value=""
+                    class="form form-control input-text-HOME"
+                    placeholder="xxx"
+                    data-inputmask='"mask": "999"'
+                    data-mask=""
+                    id="cvv-code-input"
+                  />
+                </div>
+              </div>
+
+              <input type="hidden" name="dcl" value="1745503" />
+              <input type="hidden" value="1" name="process" />
+              <input class="button-4-to-5" "="" type="submit" value="AVANÇAR">
+
+              <div class="back-to-3-to-4">
+                <a href="https://meiemfoco.com.br/meiv4/pagamento">
+                  ALTERAR FORMA DE PAGAMENTO
+                </a>
+              </div>
+              <div class="step-area-text" style="text-align: center">
+                <p class="p-form-HOME">
+                  Caso você tenha qualquer dúvida poderá entrar em contato com
+                  nosso suporte, clicando no ícone de
+                  <b> WhatsApp no canto inferior direito da página.</b>
+                  <br />
+                  Teremos a maior alegria em te atender.
+                </p>
+
+                <p class="mt-5 text-center p-form-HOME">
+                  <img
+                    alt="Asaas"
+                    src="https://meiemfoco.com.br/mei-v3/img/asaas-dark-blue.svg"
+                    width="98"
+                  />
+                  <br />
+                  Pagamento processado pelo Asaas
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="second-section">
+      <div class="container">
+        <div class="title-text-second-section">
+          <p class="text-second-section">Como fazer a declaração</p>
+          <p class="title-second-section">
+            Veja um passo a passo simples e fácil sobre sua declaração anual
+          </p>
+        </div>
+        <div class="left-right-section-wrapper">
+          <div class="left-part">
+            <div class="first-image">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/img-part-1.webp"
+                alt=""
+              />
+            </div>
+            <div class="second-image-wrapper">
+              <div class="logo-img-wrapper">
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/logo-icon.webp"
+                  alt=""
+                />
+              </div>
+              <div class="img-2-wrapper">
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/img-flex-1.webp"
+                  alt=""
+                />
+              </div>
+              <div class="img-2-wrapper">
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/img-flex-2.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="right-part">
+            <div class="step-by-step">
+              <div class="step">
+                <div class="number-step">
+                  <div class="number">1</div>
+                  <div class="text-number-step">Consulte</div>
+                </div>
+
+                <div class="step-main-text">
+                  Clique no botão CONSULTAR DECLARAÇÕES, preencha com seu CNPJ e
+                  clique em avançar.
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="number-step">
+                  <div class="number">2</div>
+                  <div class="text-number-step">Selecione o ano</div>
+                </div>
+
+                <div class="step-main-text">
+                  Selecione o ano que deseja declarar, os anos que estiverem na
+                  cor verde já foram entregues, e os que estiverem na cor azul
+                  estão pendentes de entrega. Atente-se para o fato de que você
+                  deverá entregar seguindo uma sequência, ou seja, para entregar
+                  a declaração de 2019 você deverá ter entregue a de 2018, e
+                  assim sucessivamente. Para ajudar deixamos o ano que deve ser
+                  entregue antes na cor azul escuro, basta clicar nele e seguir
+                  os próximos passos;
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="number-step">
+                  <div class="number">3</div>
+                  <div class="text-number-step">Preencha o valor bruto</div>
+                </div>
+
+                <div class="step-main-text">
+                  A próxima etapa é preencher o valor bruto total que você
+                  faturou, terão 2 campos, um para COMÉRCIO e outro para
+                  SERVIÇOS. Some todos os meses do ano que está sendo declarado
+                  e preencha no campo respectivo a cada atividade, as vendas de
+                  produtos no campo COMÉRCIO e a prestação de serviços no campo
+                  SERVIÇOS. Caso não tenha faturado nada basta manter os valores
+                  como 0,00.
+                </div>
+
+                <div class="step-main-text-2">
+                  Atenção: Mesmo que você não tenha emitido notas fiscais você
+                  deve informar tudo que recebeu sem nenhum desconto, valor
+                  bruto total e não apenas o seu lucro.
+                </div>
+
+                <div class="step-main-text">
+                  Mas se por acaso você abriu seu MEI no meio do ano de 2022, em
+                  março por exemplo, você deverá contar apenas do mês de Março
+                  até Dezembro, que darão 10 meses, ou seja, se você recebeu R$
+                  2.000,00 por mês você vai declarar o valor de R$ 20.000,00. E
+                  não esqueça, o valor total da sua receita não pode ser
+                  superior a R$ 81.000,00 por ano ou R$ 6.750,00 por mês.
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="number-step">
+                  <div class="number">4</div>
+                  <div class="text-number-step">Informe funcionários</div>
+                </div>
+
+                <div class="step-main-text">
+                  Ainda na mesma tela, você precisará informar se teve ou não
+                  funcionários registrados no ano declarado e autorizar a MEI em
+                  Foco a conferir e transmitir a sua declaração, além de
+                  declarar estar ciente da taxa de assessoria pra envio da sua
+                  declaração.
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="number-step">
+                  <div class="number">5</div>
+                  <div class="text-number-step">Efetue o pagamento</div>
+                </div>
+
+                <div class="step-main-text">
+                  Prontinho, agora é só escolher uma das formas e efetuar o
+                  pagamento do valor referente aos nossos serviços que a nossa
+                  equipe se encarrega de conferir tudinho e enviar sua
+                  declaração.Viu só como é rápido e fácil, seguindo os passos em
+                  algumas horas você receberá em seu e-mail o comprovante de
+                  envio da sua DASN-SIMEI e estará em dia com a Receita Federal.
+                  As palavras mais buscadas para a declaração anual do MEI
+                  (DASN-SIMEI) incluem "declaração anual do MEI"
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="third-section">
+      <div class="title-section-feed">Depoimentos</div>
+      <div class="title-2-section-feed">Quem usa nosso serviço recomenda</div>
+      <div class="subtitle-secion-feed">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since.
+      </div>
+    </section>
+
+    <div class="slider-wrapper">
+      <div class="container">
+        <div class="glide glide--ltr glide--carousel glide--swipeable">
+          <div class="glide__track" data-glide-el="track">
+            <ul
+              class="glide__slides"
+              style="
+                transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+                width: 4353.33px;
+                transform: translate3d(-793.333px, 0px, 0px);
+              "
+            >
+              <li
+                class="glide__slide glide__slide--clone"
+                style="width: 386.667px; margin-right: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+              <li
+                class="glide__slide glide__slide--clone"
+                style="width: 386.667px; margin-left: 5px; margin-right: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+              <li
+                class="glide__slide glide__slide--clone"
+                style="width: 386.667px; margin-left: 5px; margin-right: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+              <li
+                class="glide__slide glide__slide--active"
+                style="width: 386.667px; margin-left: 5px; margin-right: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+              <li
+                class="glide__slide"
+                style="width: 386.667px; margin-left: 5px; margin-right: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+              <li
+                class="glide__slide"
+                style="width: 386.667px; margin-left: 5px; margin-right: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+              <li
+                class="glide__slide"
+                style="width: 386.667px; margin-left: 5px; margin-right: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+              <li
+                class="glide__slide"
+                style="width: 386.667px; margin-left: 5px; margin-right: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+              <li
+                class="glide__slide glide__slide--clone"
+                style="width: 386.667px; margin-left: 5px; margin-right: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+              <li
+                class="glide__slide glide__slide--clone"
+                style="width: 386.667px; margin-left: 5px; margin-right: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+              <li
+                class="glide__slide glide__slide--clone"
+                style="width: 386.667px; margin-left: 5px"
+              >
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/feedback1.webp"
+                  alt="Imagem 1"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              &lt;
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              &gt;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="fourth-section">
+      <img
+        src="https://meiemfoco.com.br/assets/mei-v4/img/circle-icon.svg"
+        alt=""
+      />
+      <div class="container">
+        <div class="fourth-section-first-part">
+          <p class="fourth-section-text">
+            Mais de 50 mil pessoas usam MEI em Foco. Agora é sua vez, junte-se a
+            elas!
+          </p>
+          <div class="rating-pics">
+            <div class="rating-pic-item-1">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/rating-pic-1.webp"
+                alt=""
+              />
+            </div>
+            <div class="rating-pic-item-2">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/rating-pic-2.svg"
+                alt=""
+              />
+            </div>
+            <div class="rating-pic-item-3">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/rating-pic-3.svg"
+                alt=""
+              />
+            </div>
+            <div class="rating-pic-item-4">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/rating-pic-4.svg"
+                alt=""
+              />
+            </div>
+            <div class="rating-pic-item-5">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/rating-pic-5.svg"
+                alt=""
+              />
+            </div>
+            <div class="rating-pic-item-6">
+              <span>+350mil</span>
+            </div>
+          </div>
+
+          <p class="playstore-rate">Nota na playstore</p>
+          <div class="rating-note">
+            <div class="stars">
+              <div class="star">
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/star-2.webp"
+                  alt=""
+                />
+              </div>
+              <div class="star">
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/star-2.webp"
+                  alt=""
+                />
+              </div>
+              <div class="star">
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/star-2.webp"
+                  alt=""
+                />
+              </div>
+              <div class="star">
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/star-2.webp"
+                  alt=""
+                />
+              </div>
+              <div class="star">
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/star-2.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="rate-note">
+              <span class="actual-note">4,7</span>/<span class="value-note"
+                >5.0</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="fourth-section-second-part">
+          <div class="cta-app-wrapper">
+            <p>
+              Eai? Não acredito que você irá ficar de fora! Organize agora mesmo
+              sua documentação MEI
+            </p>
+            <span>Baixe agora mesmo nosso app</span>
+            <a
+              href="https://play.google.com/store/apps/details?id=br.com.meiemfoco"
+              class="cta-app"
+            >
+              <div class="app-icon">
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/google-app.webp"
+                  alt=""
+                />
+              </div>
+              <div class="cta-text">
+                <img
+                  class="available"
+                  src="https://meiemfoco.com.br/assets/mei-v4/disponivel.webp"
+                  alt=""
+                />
+                <img
+                  src="https://meiemfoco.com.br/assets/mei-v4/img/google-icon.webp"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fiveth-section">
+      <div class="container">
+        <div class="fiveth-section-text-wrapper">
+          <p class="fiveth-section-first-text">
+            100% de transparência, sem letras miúdas
+          </p>
+          <p class="fiveth-section-second-text">
+            Na contração de qualquer serviço, caso não fique satisfeito(a) pode
+            pedir a devolução do seu dinheiro sem qualquer&nbsp;pergunta
+          </p>
+        </div>
+        <div class="fiveth-section-image-wrapper">
+          <img
+            src="https://meiemfoco.com.br/assets/mei-v4/img/garantia-icon.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="sixth-section">
+      <div class="container">
+        <div class="title-1-section-doubt">Dúvidas?</div>
+        <p class="title-section-doubt">Perguntas Frequentes</p>
+        <p class="desc-section-doubt">
+          Separamos as principais dúvidas de alguns usuários, talvez uma pessoas
+          possa te ajudar a resolver seu problema
+        </p>
+        <div class="talk-img">
+          <img
+            src="https://meiemfoco.com.br/assets/mei-v4/img/talk-img.webp"
+            alt=""
+          />
+        </div>
+        <div class="talk-img-2">
+          <img
+            src="https://meiemfoco.com.br/assets/mei-v4/img/talk-img-2.webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="drop-down-section">
+      <div class="container">
+        <ul>
+          <li>
+            <div class="drop-down">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/drop-down-arrow.webp"
+                alt=""
+              />
+              <p class="title-drop-down">Lorem Ipsum Dolor</p>
+
+              <p class="text-drop-down">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="drop-down">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/drop-down-arrow.webp"
+                alt=""
+              />
+              <p class="title-drop-down">Lorem Ipsum Dolor</p>
+
+              <p class="text-drop-down">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="drop-down">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/drop-down-arrow.webp"
+                alt=""
+              />
+              <p class="title-drop-down">Lorem Ipsum Dolor</p>
+
+              <p class="text-drop-down">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="drop-down">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/drop-down-arrow.webp"
+                alt=""
+              />
+              <p class="title-drop-down">Lorem Ipsum Dolor</p>
+
+              <p class="text-drop-down">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="drop-down">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/drop-down-arrow.webp"
+                alt=""
+              />
+              <p class="title-drop-down">Lorem Ipsum Dolor</p>
+
+              <p class="text-drop-down">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <div class="drop-down">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/drop-down-arrow.webp"
+                alt=""
+              />
+              <p class="title-drop-down">Lorem Ipsum Dolor</p>
+
+              <p class="text-drop-down">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="drop-down">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/drop-down-arrow.webp"
+                alt=""
+              />
+              <p class="title-drop-down">Lorem Ipsum Dolor</p>
+
+              <p class="text-drop-down">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="drop-down">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/drop-down-arrow.webp"
+                alt=""
+              />
+              <p class="title-drop-down">Lorem Ipsum Dolor</p>
+
+              <p class="text-drop-down">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="drop-down">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/drop-down-arrow.webp"
+                alt=""
+              />
+              <p class="title-drop-down">Lorem Ipsum Dolor</p>
+
+              <p class="text-drop-down">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="drop-down">
+              <img
+                src="https://meiemfoco.com.br/assets/mei-v4/img/drop-down-arrow.webp"
+                alt=""
+              />
+              <p class="title-drop-down">Lorem Ipsum Dolor</p>
+
+              <p class="text-drop-down">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="seventh-section">
+      <div class="container">
+        <img
+          src="https://meiemfoco.com.br/assets/mei-v4/img/tg-icon-1.svg"
+          class="tg-icon-1"
+          alt=""
+        />
+        <img
+          src="https://meiemfoco.com.br/assets/mei-v4/img/tg-icon-2.svg"
+          class="tg-icon-2"
+          alt=""
+        />
+        <img
+          src="https://meiemfoco.com.br/assets/mei-v4/img/tg-icon-new.webp"
+          class="tg-icon-3"
+          alt=""
+        />
+        <img
+          src="https://meiemfoco.com.br/assets/mei-v4/img/tg-icon-2.svg"
+          class="tg-icon-4"
+          alt=""
+        />
+        <p>
+          Quer conhecer mais sobre o regime MEI? Acesse nosso canal do telegram
+          Entrar no Telegram
+        </p>
+
+        <a href="https://t.me/meisbrasil" class="seventh-section-btn">
+          Entrar no telegram
+        </a>
+      </div>
+    </section>
+    <section class="footer-1">
+      <div class="container">
+        <div class="logo-and-app">
+          <div class="logo-footer">
+            <img
+              src="https://meiemfoco.com.br/assets/mei-v4/img/logo-footer.svg"
+              alt=""
+            />
+          </div>
+          <div class="app-footer">
+            <p class="app-footer-text">Use nosso app e ganhe tempo!</p>
+            <img
+              src="https://meiemfoco.com.br/assets/mei-v4/img/google-app-2.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-2">
+      <div class="container">
+        <ul>
+          <li>Serviços</li>
+          <li><a href="">Declaração anual</a></li>
+        </ul>
+
+        <ul>
+          <li>Sobre</li>
+          <li><a href="">Termos de Uso</a></li>
+          <li><a href="">Política de Privacidade</a></li>
+        </ul>
+
+        <ul>
+          <li>Contato</li>
+          <li><a href="">sac@meiemfoco.com.br</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer-copyright">
+      <p>
+        MEI EM FOCO SOLUCOES EMPRESARIAIS LTDA - CNPJ: 30.252.077/0001-10<br />
+        sac@meiemfoco.com.br | Fazenda Rio Grande - Paraná
+      </p>
+    </section>
+    <script src="https://meiemfoco.com.br/mei-v3/js/jquery-3.6.0.min.js"></script>
+    <script src=""></script>
+    <script src=""></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+    <script src="https://meiemfoco.com.br/assets/mei-v4/script/slider.js"></script>
+    <script src="https://meiemfoco.com.br/assets/mei-v4/script/main.js"></script>
+    <script src="https://meiemfoco.com.br/assets/mei-v4/script/dropDown.js"></script>
+    <script src="https://meiemfoco.com.br/assets/mei-v4/script/menu.js"></script>
+    <script src="https://meiemfoco.com.br/plugins/input-mask/jquery.inputmask.js"></script>
+    <script src="https://meiemfoco.com.br/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+    <script src="https://meiemfoco.com.br/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+    <script src="https://meiemfoco.com.br/plugins/maskmoney/jquery.maskMoney.min.js"></script>
+    <script src="https://meiemfoco.com.br/assets/mei-v4/script/home.js"></script>
+    <script src=""></script>
+
+    <script>
+      $(function () {
+        $("[data-mask]").inputmask();
+
+        $(".money").maskMoney({
+          prefix: "",
+          decimal: ",",
+          thousands: ".",
+        });
+
+        function mascara() {
+          var a = parseFloat(
+            $(".vlproduto").val().replace(".", "").replace(",", ".")
+          );
+          var b = parseFloat(
+            $(".vlservico").val().replace(".", "").replace(",", ".")
+          );
+          a = isNaN(a) ? 0 : a;
+          b = isNaN(b) ? 0 : b;
+          var total = a + b;
+          //$('#soma_total').html(total.toFix(2))
+
+          var intl = Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          });
+          var dado = $("#soma_total");
+          dado.html(intl.format(total));
+        }
+
+        $(".money").change(mascara);
+        $(".money").focusout(mascara);
+
+        ///$('[data-toggle="popover"]').popover();
+
+        //aqui vai o cloc do contador
+
+        /*
+      $('#form_cupom').on("submit", function(event){
+        event.preventDefault();
+        var params = $(this).serialize();
+        var url = $(this).prop('action'); 
+        console.log( params );
+        $.post( url , params, function( data ) {
+                //$( ".result" ).html( data );
+                if( data != null ){
+                  data = $.parseJSON(data);
+                  alert( data.pessoa_ativa == 1 );
+                }
+              });
+      });
+      */
+      });
+    </script>
+  </body>
+</html>
